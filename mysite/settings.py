@@ -10,7 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+import os
+from dotenv import load_dotenv
 from pathlib import Path
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -74,9 +78,13 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE":os.getenv('DATA_BASE_ENGINE'),
+        "NAME":os.getenv('DATA_BASE_NAME'),
+        "USER":os.getenv('DATA_BASE_USER'),
+        "PASSWORD":os.getenv('DATA_BASE_PASSWORD'),
+        "HOST":os.getenv('DATA_BASE_HOST'),
+        "PORT":os.getenv('DATA_BASE_PORT'),
     }
 }
 
