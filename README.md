@@ -12,4 +12,7 @@
    - `python manage.py migrate`
 5. Model 생성 그리고 연동
    - python manage.py makemigrations polls
-   - python manage.py migrate
+   - python manage.py migrate<br>
+     ![Alt text](image-1.png)
+     ![Alt text](image-2.png)
+     ![Alt text](image-3.png)
