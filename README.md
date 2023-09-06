@@ -10,3 +10,6 @@
    - pip install mysqlclient
    - pip install python-dotenv
    - `python manage.py migrate`
+5. Model 생성 그리고 연동
+   - python manage.py makemigrations polls
+   - python manage.py migrate
