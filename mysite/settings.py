@@ -80,12 +80,12 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     "default": {
-        "ENGINE":os.getenv('DATA_BASE_ENGINE'),
-        "NAME":os.getenv('DATA_BASE_NAME'),
-        "USER":os.getenv('DATA_BASE_USER'),
-        "PASSWORD":os.getenv('DATA_BASE_PASSWORD'),
-        "HOST":os.getenv('DATA_BASE_HOST'),
-        "PORT":os.getenv('DATA_BASE_PORT'),
+        "ENGINE": os.getenv('DATA_BASE_ENGINE'),
+        "NAME": os.getenv('DATA_BASE_NAME'),
+        "USER": os.getenv('DATA_BASE_USER'),
+        "PASSWORD": os.getenv('DATA_BASE_PASSWORD'),
+        "HOST": os.getenv('DATA_BASE_HOST'),
+        "PORT": os.getenv('DATA_BASE_PORT'),
     }
 }
 
